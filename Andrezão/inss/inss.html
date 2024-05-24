@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de INSS</title>
+  <link rel="stylesheet" href="inss.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de INSS</h1>
+    <form>
+      <label for="salarioBruto">Salário Bruto:</label>
+      <input type="text" id="salarioBruto" name="salarioBruto">
+
+      <label for="dependentes">Quantidade de Dependentes:</label>
+      <input type="text" id="dependentes" name="dependentes">
+
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+
+    <div class="resultados">
+      <p>Porcentagem de INSS: <span id="inss"></span></p>
+      <p>Porcentagem de Imposto de Renda: <span id="ir"></span></p>
+      <p>Salário Líquido: <span id="salarioLiquido"></span></p>
+    </div>
+  </div>
+
+  <script src="scriptinss.js"></script>
+</body>
+</html>

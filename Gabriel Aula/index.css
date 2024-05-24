@@ -1,0 +1,95 @@
+
+
+
+.Login{
+    width: 30vw;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.Login h1{
+    font-size: 76px;
+    text-align: center  ;
+}
+
+.Login p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.usuario{
+    font-size: 35px;
+    width:75%;
+    margin-bottom: 5%;
+    padding:5%;
+    border-radius:10px;
+    border-color: rgb(114, 13, 237);
+    border-style:solid ;
+    border-width: 2px ;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.senha{
+    font-size: 35px;
+    width:75%;
+    margin-bottom: 5%;
+    padding:5%;
+    border-radius:10px;
+    border-color: rgb(114, 13, 237);
+    border-style:solid ;
+    border-width: 2px ;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.usuario:focus{
+    border-color: rgb(114, 13, 237);
+
+
+}
+
+.enviar{
+    width: 90%;
+    font-size:25px;
+    padding: 3%;
+    background-color: rgb(44, 80, 156);
+    outline: none;
+    border-style:solid ;
+    color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 10px;
+}
+
+.enviar:hover{
+    background-color: rgb(114, 13, 237);
+    color: black;
+    border-color: aliceblue;
+
+}
+
+.Figura{
+    width: 70vw;
+    height: 100%;
+
+}
+
+.Figura.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.Container{
+    display: flex;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+
+}

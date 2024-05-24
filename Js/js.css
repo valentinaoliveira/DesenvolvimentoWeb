@@ -1,0 +1,49 @@
+body{
+    background-color:rgb(230, 157, 219) ;
+    display: flex;
+}
+
+.htjs{
+    display: grid;
+    gap: 20px;
+}
+
+.html{
+    background-color: rgb(165, 70, 249);
+    height: 48vh;
+    width: 40vw;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+.js{
+    background-color: rgb(20, 185, 119);
+    height: 48vh;
+    width: 40vw;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.csre{
+    display: grid;
+    gap: 20px;
+
+}
+
+.css{
+    background-color: rgb(52, 156, 221);
+    height: 48vh;
+    width: 40vw;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.resultado{
+    background-color: rgb(191, 221, 18);
+    height: 48vh;
+    width: 40vw;
+    border: 1px solid black;
+    text-align: center;
+
+}

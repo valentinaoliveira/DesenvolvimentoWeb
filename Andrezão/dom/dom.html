@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliativa</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <div class="ContainerEsquerda">
+        <div class="NovaTarefa">
+            <div class="CriarTarefa">
+                <form id="livroForm">
+                    <h1>Adicione um livro!</h1>
+                    <h4>Insira o título do livro</h4>
+                    <input class="DigitarTextos" type="text" placeholder="Título">
+                    <h4>Coloque o Autor do Livro</h4>
+                    <input class="DigitarTextos" type="text" placeholder="Autor">
+                    <h4>Coloque o ano de lançamento</h4>
+                    <input class="DigitarTextos" type="text" placeholder="Data">
+                    <input class="Enviar" type="submit" value="Criar">
+                </form>
+            </div> 
+
+            <div class="Tabeladelivros">
+                <table id="livrosTable" border="1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Data</th>
+                            <th>Deletar</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Linhas da tabela serão adicionadas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Seleciona o formulário
+    const form = document.getElementById('livroForm');
+
+    // Seleciona a tabela
+    const table = document.getElementById('livrosTable').getElementsByTagName('tbody')[0];
+
+    // Variável para rastrear o ID dos livros
+    let livroId = 1;
+
+    // Função para adicionar um novo livro à tabela
+    function adicionarLivro(event) {
+        event.preventDefault();
+
+        // Seleciona os inputs do formulário
+        const inputs = document.querySelectorAll('.DigitarTextos');
+
+        // Cria uma nova linha na tabela
+        const newRow = table.insertRow();
+
+        // Adiciona o ID à linha da tabela e incrementa o contador de ID
+        newRow.dataset.id = livroId++;
+
+        // Adiciona uma célula para o ID
+        const idCell = newRow.insertCell();
+        idCell.textContent = newRow.dataset.id;
+
+        // Adiciona uma célula para cada campo do livro
+        for (let i = 0; i < inputs.length; i++) {
+            const cell = newRow.insertCell();
+            cell.textContent = inputs[i].value;
+        }
+
+        // Adiciona a coluna de deletar
+        const deleteCell = newRow.insertCell();
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Deletar';
+        deleteButton.onclick = function () {
+            const rowToDelete = this.parentNode.parentNode;
+            rowToDelete.remove();
+        };
+        deleteCell.appendChild(deleteButton);
+
+        // Adiciona a coluna de editar
+        const editCell = newRow.insertCell();
+        const editButton = document.createElement('button');
+        editButton.textContent = 'Editar';
+        editButton.onclick = function () {
+            // Pega a linha atual
+            const rowToEdit = this.parentNode.parentNode;
+
+            // Preenche os campos de input com os valores da linha selecionada
+            const inputs = document.querySelectorAll('.DigitarTextos');
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = rowToEdit.cells[i+1].textContent;
+            }
+
+            // Adiciona um evento de envio personalizado para o formulário de edição
+            form.onsubmit = function(event) {
+                event.preventDefault();
+
+                // Atualiza os valores da linha com os valores dos inputs
+                for (let i = 0; i < inputs.length; i++) {
+                    rowToEdit.cells[i+1].textContent = inputs[i].value;
+                }
+
+                // Limpa os campos de input
+                for (let i = 0; i < inputs.length; i++) {
+                    inputs[i].value = '';
+                }
+
+                // Remove o evento de envio personalizado
+                form.onsubmit = adicionarLivro;
+            };
+        };
+        editCell.appendChild(editButton);
+
+        // Limpa os campos de input após adicionar um novo livro
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].value = '';
+        }
+    }
+
+    // Adiciona um ouvinte de evento para o envio do formulário
+    form.addEventListener('submit', adicionarLivro);
+</script>
+</body>
+</html>

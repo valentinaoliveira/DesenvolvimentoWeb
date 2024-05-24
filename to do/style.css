@@ -1,0 +1,94 @@
+body{
+    display: flex;
+   background-color: rgb(236, 226, 245);
+}
+
+*{
+    margin: 0 5px;
+}
+
+
+.ContainerEsquerda{
+    
+    width: 50%;
+    height: 100vh;
+}
+
+
+.ContainerDireita{
+    
+    width: 50%;
+    height: fit-content;
+
+}
+
+.Contador{
+    background-color: rgb(236, 226, 245);
+    height: 50vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.NovaTarefa{
+   
+    height: 60vh;
+    margin: 0;
+}
+
+
+.ContadorTarefasConcluidas{
+    width: 100%;
+    height: fit-content;
+    margin: 3px 5px ;
+    padding: 15px 0;
+    background-color: rgb(230, 174, 222);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+    border-radius: 10px;
+}
+
+.CriarTarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 275px;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: rgb(230, 174, 222);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+}
+
+.CriarTarefa h4{
+    margin: 10px 5vw;
+}
+
+.DigitarTextos{
+    margin: 0 auto 10px auto;
+    font-size: 20px;
+    padding: 5px 4vw;
+    width: 60%;
+}
+
+.Enviar{
+    margin: 10px auto 0px auto ;
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.CrianTarefa h1{
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+.Tarefa{
+    
+}
+

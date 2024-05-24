@@ -1,0 +1,134 @@
+body{
+    display: flex;
+   background-color: rgb(230, 157, 219)
+}
+
+*{
+    margin: 0 5px;
+}
+
+
+.ContainerEsquerda{
+    
+    width: 50%;
+    height: 100vh;
+}
+
+
+
+
+.Contador{
+    background-color: rgb(236, 226, 245);
+    height: 50vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+.NovaTarefa{
+   
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+
+.CriarTarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 250px;
+    margin-right: -200px;
+    min-width: 0px;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: rgb(230, 174, 222);
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+.CriarTarefa h4{
+    margin: 0px 0vw;
+}
+
+
+.DigitarTextos{
+    margin: 0 auto 10px auto;
+    font-size: 15px;
+    padding: 5px 0vw;
+    width: 60%;
+}
+
+.Enviar{
+    margin: 10px auto 0px auto ;
+    width: 30%;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.CrianTarefa h1{
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+.Tabeladelivros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+    margin-left: 0px;
+    margin-right: -450px;
+    min-width: 500px;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: rgb(230, 174, 222);
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 3px 8px;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+

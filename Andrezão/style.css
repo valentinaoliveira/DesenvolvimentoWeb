@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+
+    
+}
+
+.cabecalho {
+    background-color:#CF3EE7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 275px;
+    padding: 15px 0;
+    
+   
+}
+
+.menu{
+    background-color: #CF3EE7;
+    width: 332px;
+    height: 531px;
+    text-align: center;
+    float: left;
+   
+    
+    
+}
+
+.lista{
+    width: 95%;
+    height: 62%;
+    margin: 5px 8px ;
+    padding: 20px 0;
+    background-color: rgb#CF3EE7;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+
+}
+
+#mat{
+    width: -100px;
+    background-color: rgb(230, 157, 219);
+    height: 55px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+#mat:hover{
+    background-color: rgba(66, 63, 63, 0.258);
+    cursor: pointer;
+}
+
+#dom{
+    width: -100px;
+    background-color: rgb(230, 157, 219);
+    height: 55px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#dom:hover{
+    background-color: rgba(66, 63, 63, 0.258);
+    cursor: pointer;
+}
+
+#inss{
+    width: -100px;
+    background-color: rgb(230, 157, 219);;
+    height: 55px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#inss:hover{
+    background-color: rgba(66, 63, 63, 0.258);
+    cursor: pointer;
+}
+
+#scrp{
+    width: -100px;
+    background-color: rgb(230, 157, 219);
+    height: 55px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#scrp:hover{
+    background-color: rgba(66, 63, 63, 0.258);
+    cursor: pointer;
+}
+
+
+.conteudo{
+    background-color: #FACAEA;
+    width: -912px;
+    height: 531px;
+    text-align: center;
+    float: right 193px;
+    
+
+
+}
+
