@@ -33,3 +33,15 @@ function mostrarinss(){
 function carregarPagina(url) {
     document.getElementById("conteudoFrame").src = url;
 }
+
+const scrp = document.getElementById("scrp");
+
+scrp.addEventListener("click", mostrarscrp);
+
+function mostrarscrp(){
+    carregarPagina("scripts/scrp.html")
+}
+
+function carregarPagina(url) {
+    document.getElementById("conteudoFrame").src = url;
+}
